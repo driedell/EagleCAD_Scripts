@@ -1,0 +1,30 @@
+#change font vector;
+#change size 32 mil;
+#change ratio 12;
+#change align center;
+
+display torig borig;   # Display the top and bottom origins
+group all;             # Group everything
+smash (C>0 0);         # Smash everything in the group
+display none tname bname; # OPTIONAL: limit changes to names
+group all;             # Group everything including smashed texts.
+change font vector (C>0 0); # Change the font to a vector font
+change size 40mil (C>0 0); # Change the font size
+change ratio 12 (C>0 0); # Change the width:height ratio
+change align center;
+display last;
+
+display torig borig;   # Display the top and bottom origins
+group all;             # Group everything
+smash (C>0 0);         # Smash everything in the group
+display none tval bval; # OPTIONAL: limit changes to values
+group all;             # Group everything including smashed texts.
+change font vector (C>0 0); # Change the font to a vector font
+change size 30mil (C>0 0); # Change the font size
+change ratio 12 (C>0 0); # Change the width:height ratio
+change align center;
+display last;
+
+
+
+
